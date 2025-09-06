@@ -1,0 +1,12 @@
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\WindowsFormsApp-Tarea1.exe.config
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\WindowsFormsApp-Tarea1.exe
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\WindowsFormsApp-Tarea1.pdb
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp-Tarea1.csproj.AssemblyReference.cache
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Form1.resources
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Properties.Resources.resources
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp-Tarea1.csproj.GenerateResource.cache
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp-Tarea1.csproj.CoreCompileInputs.cache
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp-Tarea1.exe
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp-Tarea1.pdb
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp-Tarea1.exe.config
+C:\Users\Ale\Desktop\Programacion-3\Winforms\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Form2.resources
