@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Categoria.cs" />
     <Compile Include="Clases\ClassArticulo.cs" />
+    <Compile Include="Clases\Imagen.cs" />
     <Compile Include="Ventanas\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
