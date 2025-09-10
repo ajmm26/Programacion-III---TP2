@@ -50,6 +50,7 @@
     <Compile Include="Clases\Categoria.cs" />
     <Compile Include="Clases\Articulo.cs" />
     <Compile Include="Clases\Imagen.cs" />
+    <Compile Include="Clases\Marca.cs" />
     <Compile Include="Ventanas\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,11 +63,11 @@
     <Compile Include="Ventanas\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventanas\Form3.cs">
+    <Compile Include="Ventanas\Alta Articulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventanas\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Ventanas\Alta Articulo.Designer.cs">
+      <DependentUpon>Alta Articulo.cs</DependentUpon>
     </Compile>
     <Compile Include="Ventanas\Form4.cs">
       <SubType>Form</SubType>
@@ -94,8 +95,8 @@
     <EmbeddedResource Include="Ventanas\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Ventanas\Alta Articulo.resx">
+      <DependentUpon>Alta Articulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>

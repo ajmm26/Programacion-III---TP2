@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp_Tarea1
 {
-    public class Imagen
+    internal class Marca
     {
-        public int Id {  get; set; }
-        public int IdArticulo { get; set; }
-        public string ImagenUrl { get; set; }
-
+        public int IdMarca { get; set; }    
+        public string DescripcionMarca { get; set; }
     }
 }

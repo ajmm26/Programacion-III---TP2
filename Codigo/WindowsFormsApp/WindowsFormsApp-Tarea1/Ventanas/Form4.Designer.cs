@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.labelNombre = new System.Windows.Forms.Label();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.cBoxMarcaCategoria = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -44,51 +44,52 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Agregar Marca o Categoria";
             // 
-            // comboBox1
+            // labelNombre
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(245, 54);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(252, 21);
-            this.comboBox1.TabIndex = 1;
+            this.labelNombre.AutoSize = true;
+            this.labelNombre.Location = new System.Drawing.Point(87, 109);
+            this.labelNombre.Name = "labelNombre";
+            this.labelNombre.Size = new System.Drawing.Size(44, 13);
+            this.labelNombre.TabIndex = 2;
+            this.labelNombre.Text = "Nombre";
             // 
-            // label2
+            // textBoxNombre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(87, 109);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nombre";
+            this.textBoxNombre.Location = new System.Drawing.Point(245, 109);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(252, 20);
+            this.textBoxNombre.TabIndex = 3;
             // 
-            // textBox1
+            // btnAgregar
             // 
-            this.textBox1.Location = new System.Drawing.Point(245, 109);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 20);
-            this.textBox1.TabIndex = 3;
+            this.btnAgregar.Location = new System.Drawing.Point(332, 172);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // cBoxMarcaCategoria
             // 
-            this.button1.Location = new System.Drawing.Point(332, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cBoxMarcaCategoria.FormattingEnabled = true;
+            this.cBoxMarcaCategoria.Location = new System.Drawing.Point(245, 54);
+            this.cBoxMarcaCategoria.Name = "cBoxMarcaCategoria";
+            this.cBoxMarcaCategoria.Size = new System.Drawing.Size(252, 21);
+            this.cBoxMarcaCategoria.TabIndex = 1;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(560, 261);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.textBoxNombre);
+            this.Controls.Add(this.labelNombre);
+            this.Controls.Add(this.cBoxMarcaCategoria);
             this.Controls.Add(this.label1);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Alta Marca o Categoria";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,9 +98,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelNombre;
+        private System.Windows.Forms.TextBox textBoxNombre;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.ComboBox cBoxMarcaCategoria;
     }
 }

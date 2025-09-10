@@ -16,7 +16,6 @@ C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsForm
 C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp-Tarea1.csproj.AssemblyReference.cache
 C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp-Tarea1.exe.config
 C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Form1.resources
-C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Form2.resources
 C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Properties.Resources.resources
 C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp-Tarea1.csproj.GenerateResource.cache
 C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp-Tarea1.csproj.CoreCompileInputs.cache
@@ -38,3 +37,8 @@ C:\Users\Ale\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsA
 C:\Users\Ale\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\WindowsFormsApp-Tarea1.exe
 C:\Users\Ale\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\WindowsFormsApp-Tarea1.pdb
 C:\Users\Ale\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.CatalogoWindows.resources
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.CatalogoWindows.resources
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.AltaArticulo.resources
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Form4.resources
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Ventanas.Form5.resources
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Ventanas.Form6.resources

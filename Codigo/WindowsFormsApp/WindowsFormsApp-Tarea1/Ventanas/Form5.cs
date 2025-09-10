@@ -17,6 +17,9 @@ namespace WindowsFormsApp_Tarea1.Ventanas
             InitializeComponent();
         }
 
-        
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

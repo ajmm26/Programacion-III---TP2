@@ -90,14 +90,14 @@ namespace WindowsFormsApp_Tarea1.Clases
             try
             {
                 conectar();
-                setSringCommand("select Descripcion  from Categorias");
+                setSringCommand("select Id,Descripcion  from Categorias");
                 ExcecuteLector();
                 while (lector.Read())
                 {
                     Categoria cat = new Categoria();
                    
                     
-                    cat.codigoCategoria = (int)lector["id"];
+                    cat.codigoCategoria = (int)lector["Id"];
                     cat.nombreCategoria = (string)lector["Descripcion"];
                     lista.Add(cat);
                 }
@@ -112,6 +112,119 @@ namespace WindowsFormsApp_Tarea1.Clases
                 desconectar();
             }
         }
+
+        public List<Marca> lecturaMarcas()
+        {
+            List<Marca> lista=new List<Marca>();
+            try
+            {
+                conectar();
+                setSringCommand("Select Id,Descripcion From MARCAS");
+                ExcecuteLector();
+
+                while(lector.Read())
+                {
+                    Marca aux = new Marca();
+                    aux.IdMarca = (int)lector["Id"];
+                    aux.DescripcionMarca = (string)lector["Descripcion"];
+                    lista.Add(aux);
+                }
+                return lista;
+
+            }
+            catch (Exception ex) 
+            { 
+                throw ex; 
+            }
+            finally 
+            { 
+                desconectar(); 
+            }
+        }
+
+        public List<Imagen> lecturaImagenes()
+        {
+            List<Imagen> lista =new List<Imagen>();
+            try
+            {
+                conectar();
+                setSringCommand("select Id,IdArticulo,ImagenUrl from IMAGENES");
+                ExcecuteLector();
+
+                while (lector.Read())
+                {
+                    Imagen img = new Imagen();
+                    img.Id = (int)lector["Id"];
+                    img.IdArticulo = (int)lector["IdArticulo"];
+                    img.ImagenUrl = (string)lector["ImagenUrl"];
+                    lista.Add(img);
+                }
+                return lista;
+            }
+            catch (Exception ex) 
+            { 
+                throw ex; 
+            }
+            finally
+            { 
+                desconectar();
+            }
+
+        }
+
+        public List<Imagen> lecturaImagenesPorCodigo(string codigo)
+        {
+            List<Imagen> lista = new List<Imagen>();
+            try
+            {
+                conectar();
+                setSringCommand("SELECT ImagenUrl from IMAGENES WHERE IdArticulo = (SELECT Id FROM ARTICULOS WHERE Codigo = @codigo)");
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@codigo", codigo);
+                ExcecuteLector();
+
+                while (lector.Read())
+                {
+                    Imagen img = new Imagen();
+                    img.ImagenUrl = (string)lector["ImagenUrl"];
+                    lista.Add(img);
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                desconectar();
+            }
+        }
+
+        public void agregar(Articulo nuevo)
+        {
+            try
+            {
+                conectar();
+                setSringCommand("INSERT INTO ARTICULOS (Codigo, Nombre, Precio, Descripcion) VALUES (@Codigo, @Nombre, @Precio, @Descripcion)");
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@Codigo", nuevo.Codigo);
+                comando.Parameters.AddWithValue("@Nombre", nuevo.Nombre);
+                comando.Parameters.AddWithValue("@Precio", nuevo.Precio);
+                comando.Parameters.AddWithValue("@Descripcion", nuevo.Descripcion);
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                desconectar();
+            }
+
+        }
+
     }
 }
     
