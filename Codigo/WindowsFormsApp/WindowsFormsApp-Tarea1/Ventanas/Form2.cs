@@ -7,17 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp_Tarea1.Clases;
 
 namespace WindowsFormsApp_Tarea1
 {
-    public partial class Form2 : Form
+    public partial class CatalogoWindows : Form
     {
-        public Form2()
+        public CatalogoWindows()
         {
             InitializeComponent();
         }
 
-     
 
+      
+        private void CatalogoWindows_Load(object sender, EventArgs e)
+        {
+                  CatalogoService catalogo = new CatalogoService();
+            dataGridView1.DataSource = catalogo.lecturaArticulosGeneral();
+        }
     }
 }

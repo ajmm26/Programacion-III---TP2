@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp_Tarea1
 {
-    partial class Form2
+    partial class CatalogoWindows
     {
         /// <summary>
         /// Required designer variable.
@@ -38,19 +38,21 @@
             this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.articuloToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.marcaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.articuloToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.marcaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.categoriaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.articuloToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.articuloToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.marcaToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.articuloToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.marcaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -97,19 +99,19 @@
             // articuloToolStripMenuItem
             // 
             this.articuloToolStripMenuItem.Name = "articuloToolStripMenuItem";
-            this.articuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.articuloToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.articuloToolStripMenuItem.Text = "Articulo";
             // 
             // marcaToolStripMenuItem
             // 
             this.marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
-            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.marcaToolStripMenuItem.Text = "Marca";
             // 
             // categoriaToolStripMenuItem
             // 
             this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
-            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.categoriaToolStripMenuItem.Text = "Categoria";
             // 
             // buscarToolStripMenuItem
@@ -122,51 +124,23 @@
             this.buscarToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.buscarToolStripMenuItem.Text = "Buscar";
             // 
+            // articuloToolStripMenuItem2
+            // 
+            this.articuloToolStripMenuItem2.Name = "articuloToolStripMenuItem2";
+            this.articuloToolStripMenuItem2.Size = new System.Drawing.Size(125, 22);
+            this.articuloToolStripMenuItem2.Text = "Articulo";
+            // 
             // marcaToolStripMenuItem1
             // 
             this.marcaToolStripMenuItem1.Name = "marcaToolStripMenuItem1";
-            this.marcaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.marcaToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
             this.marcaToolStripMenuItem1.Text = "Marca";
             // 
             // categoriaToolStripMenuItem1
             // 
             this.categoriaToolStripMenuItem1.Name = "categoriaToolStripMenuItem1";
-            this.categoriaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.categoriaToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
             this.categoriaToolStripMenuItem1.Text = "Categoria";
-            // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.articuloToolStripMenuItem1,
-            this.marcaToolStripMenuItem2,
-            this.categoriaToolStripMenuItem2});
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
-            // 
-            // articuloToolStripMenuItem1
-            // 
-            this.articuloToolStripMenuItem1.Name = "articuloToolStripMenuItem1";
-            this.articuloToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.articuloToolStripMenuItem1.Text = "Articulo";
-            // 
-            // marcaToolStripMenuItem2
-            // 
-            this.marcaToolStripMenuItem2.Name = "marcaToolStripMenuItem2";
-            this.marcaToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.marcaToolStripMenuItem2.Text = "Marca";
-            // 
-            // categoriaToolStripMenuItem2
-            // 
-            this.categoriaToolStripMenuItem2.Name = "categoriaToolStripMenuItem2";
-            this.categoriaToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.categoriaToolStripMenuItem2.Text = "Categoria";
-            // 
-            // articuloToolStripMenuItem2
-            // 
-            this.articuloToolStripMenuItem2.Name = "articuloToolStripMenuItem2";
-            this.articuloToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.articuloToolStripMenuItem2.Text = "Articulo";
             // 
             // modificarToolStripMenuItem
             // 
@@ -181,32 +155,72 @@
             // articuloToolStripMenuItem3
             // 
             this.articuloToolStripMenuItem3.Name = "articuloToolStripMenuItem3";
-            this.articuloToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.articuloToolStripMenuItem3.Size = new System.Drawing.Size(125, 22);
             this.articuloToolStripMenuItem3.Text = "Articulo";
             // 
             // marcaToolStripMenuItem3
             // 
             this.marcaToolStripMenuItem3.Name = "marcaToolStripMenuItem3";
-            this.marcaToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.marcaToolStripMenuItem3.Size = new System.Drawing.Size(125, 22);
             this.marcaToolStripMenuItem3.Text = "Marca";
             // 
             // categoriaToolStripMenuItem3
             // 
             this.categoriaToolStripMenuItem3.Name = "categoriaToolStripMenuItem3";
-            this.categoriaToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.categoriaToolStripMenuItem3.Size = new System.Drawing.Size(125, 22);
             this.categoriaToolStripMenuItem3.Text = "Categoria";
             // 
-            // Form2
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.articuloToolStripMenuItem1,
+            this.marcaToolStripMenuItem2,
+            this.categoriaToolStripMenuItem2});
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            // 
+            // articuloToolStripMenuItem1
+            // 
+            this.articuloToolStripMenuItem1.Name = "articuloToolStripMenuItem1";
+            this.articuloToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
+            this.articuloToolStripMenuItem1.Text = "Articulo";
+            // 
+            // marcaToolStripMenuItem2
+            // 
+            this.marcaToolStripMenuItem2.Name = "marcaToolStripMenuItem2";
+            this.marcaToolStripMenuItem2.Size = new System.Drawing.Size(125, 22);
+            this.marcaToolStripMenuItem2.Text = "Marca";
+            // 
+            // categoriaToolStripMenuItem2
+            // 
+            this.categoriaToolStripMenuItem2.Name = "categoriaToolStripMenuItem2";
+            this.categoriaToolStripMenuItem2.Size = new System.Drawing.Size(125, 22);
+            this.categoriaToolStripMenuItem2.Text = "Categoria";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(36, 46);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(732, 371);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // CatalogoWindows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form2";
+            this.Name = "CatalogoWindows";
+            this.Text = "Catalogo";
+            this.Load += new System.EventHandler(this.CatalogoWindows_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,5 +247,6 @@
         private System.Windows.Forms.ToolStripMenuItem articuloToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem marcaToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
