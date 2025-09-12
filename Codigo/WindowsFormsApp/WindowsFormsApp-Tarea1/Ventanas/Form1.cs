@@ -19,9 +19,12 @@ namespace WindowsFormsApp_Tarea1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("HOLA");
+            CatalogoWindows catalogo = new CatalogoWindows();
+            catalogo.ShowDialog();
+            this.Close();
+            
         }
 
-       
+     
     }
 }

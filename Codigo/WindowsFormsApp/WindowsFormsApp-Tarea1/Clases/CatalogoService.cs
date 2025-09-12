@@ -172,6 +172,7 @@ namespace WindowsFormsApp_Tarea1.Clases
 
         }
 
+
         public List<Imagen> lecturaImagenesPorCodigo(string codigo)
         {
             List<Imagen> lista = new List<Imagen>();
