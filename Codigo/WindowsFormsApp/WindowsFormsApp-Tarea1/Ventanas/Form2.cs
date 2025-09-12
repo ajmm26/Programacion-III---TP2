@@ -152,6 +152,11 @@ namespace WindowsFormsApp_Tarea1
             dataGridView1.DataSource = servicio.lecturaArticulosGeneral();*/
         }
 
-       
+        private void marcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 altaMarca = new Form4();
+            altaMarca.StartPosition = FormStartPosition.CenterScreen;
+            altaMarca.ShowDialog();
+        }
     }
 }

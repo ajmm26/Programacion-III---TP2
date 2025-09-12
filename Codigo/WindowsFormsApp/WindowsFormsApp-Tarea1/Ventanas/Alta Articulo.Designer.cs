@@ -43,7 +43,7 @@
             this.labelImagen = new System.Windows.Forms.Label();
             this.labelDescripcion = new System.Windows.Forms.Label();
             this.txtDescrpcion = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtImagen = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Precio
@@ -174,19 +174,19 @@
             this.txtDescrpcion.Size = new System.Drawing.Size(132, 20);
             this.txtDescrpcion.TabIndex = 20;
             // 
-            // textBox2
+            // txtImagen
             // 
-            this.textBox2.Location = new System.Drawing.Point(150, 227);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 20);
-            this.textBox2.TabIndex = 21;
+            this.txtImagen.Location = new System.Drawing.Point(150, 227);
+            this.txtImagen.Name = "txtImagen";
+            this.txtImagen.Size = new System.Drawing.Size(132, 20);
+            this.txtImagen.TabIndex = 21;
             // 
             // AltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 450);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtImagen);
             this.Controls.Add(this.txtDescrpcion);
             this.Controls.Add(this.labelDescripcion);
             this.Controls.Add(this.labelImagen);
@@ -226,6 +226,6 @@
         private System.Windows.Forms.Label labelImagen;
         private System.Windows.Forms.Label labelDescripcion;
         private System.Windows.Forms.TextBox txtDescrpcion;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtImagen;
     }
 }

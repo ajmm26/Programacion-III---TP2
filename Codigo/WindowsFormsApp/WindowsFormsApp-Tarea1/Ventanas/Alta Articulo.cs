@@ -58,11 +58,33 @@ namespace WindowsFormsApp_Tarea1
                 nuevo.Nombre = txtNombre.Text;
                 nuevo.Precio = float.Parse(txtPrecio.Text);
                 nuevo.Descripcion = txtDescrpcion.Text;
-                //nuevo.Marca = (Marca)comboBoxMarca.SelectedItem;
-                //nuevo.Categoria = (Categoria)comboBoxCategoria.SelectedItem; 
-                
+                nuevo.Marca = (Marca)comboBoxMarca.SelectedItem;
+                nuevo.Categoria = (Categoria)comboBoxCategoria.SelectedItem;
+
+                if (nuevo.Marca == null || nuevo.Categoria == null)
+                {
+                    MessageBox.Show("Por favor, seleccioná una marca y una categoría.");
+                    return;
+                }
+
+
+
                 CatalogoService servicio = new CatalogoService();
                 servicio.agregar(nuevo);
+                string urlImagen = txtImagen.Text.Trim();
+
+                if (!string.IsNullOrEmpty(urlImagen))
+                {
+                    int idArticulo = servicio.obtenerIdArticuloPorCodigo(nuevo.Codigo);
+
+                    Imagen nuevaImagen = new Imagen();
+                    nuevaImagen.IdArticulo = idArticulo;
+                    nuevaImagen.ImagenUrl = urlImagen;
+
+                    servicio.agregarImagen(nuevaImagen);
+                }
+
+
                 MessageBox.Show("Articulo agregado correctamente.");
                 Close();
             }

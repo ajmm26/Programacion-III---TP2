@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.labelNombre = new System.Windows.Forms.Label();
-            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.cBoxMarcaCategoria = new System.Windows.Forms.ComboBox();
+            this.comboBoxTipo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -53,12 +53,12 @@
             this.labelNombre.TabIndex = 2;
             this.labelNombre.Text = "Nombre";
             // 
-            // textBoxNombre
+            // txtNombre
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(245, 109);
-            this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(252, 20);
-            this.textBoxNombre.TabIndex = 3;
+            this.txtNombre.Location = new System.Drawing.Point(245, 109);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(252, 20);
+            this.txtNombre.TabIndex = 3;
             // 
             // btnAgregar
             // 
@@ -68,14 +68,15 @@
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // cBoxMarcaCategoria
+            // comboBoxTipo
             // 
-            this.cBoxMarcaCategoria.FormattingEnabled = true;
-            this.cBoxMarcaCategoria.Location = new System.Drawing.Point(245, 54);
-            this.cBoxMarcaCategoria.Name = "cBoxMarcaCategoria";
-            this.cBoxMarcaCategoria.Size = new System.Drawing.Size(252, 21);
-            this.cBoxMarcaCategoria.TabIndex = 1;
+            this.comboBoxTipo.FormattingEnabled = true;
+            this.comboBoxTipo.Location = new System.Drawing.Point(245, 54);
+            this.comboBoxTipo.Name = "comboBoxTipo";
+            this.comboBoxTipo.Size = new System.Drawing.Size(252, 21);
+            this.comboBoxTipo.TabIndex = 1;
             // 
             // Form4
             // 
@@ -83,9 +84,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 261);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.textBoxNombre);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.labelNombre);
-            this.Controls.Add(this.cBoxMarcaCategoria);
+            this.Controls.Add(this.comboBoxTipo);
             this.Controls.Add(this.label1);
             this.Name = "Form4";
             this.Text = "Alta Marca o Categoria";
@@ -99,8 +100,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelNombre;
-        private System.Windows.Forms.TextBox textBoxNombre;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.ComboBox cBoxMarcaCategoria;
+        private System.Windows.Forms.ComboBox comboBoxTipo;
     }
 }

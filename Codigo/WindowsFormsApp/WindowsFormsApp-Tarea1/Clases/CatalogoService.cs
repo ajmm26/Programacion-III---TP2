@@ -207,12 +207,16 @@ namespace WindowsFormsApp_Tarea1.Clases
             try
             {
                 conectar();
-                setSringCommand("INSERT INTO ARTICULOS (Codigo, Nombre, Precio, Descripcion) VALUES (@Codigo, @Nombre, @Precio, @Descripcion)");
+                setSringCommand("INSERT INTO ARTICULOS (Codigo, Nombre, Precio, Descripcion, IdMarca, IdCategoria) VALUES (@Codigo, @Nombre, @Precio, @Descripcion, @IdMarca, @IdCategoria)");
                 comando.Parameters.Clear();
                 comando.Parameters.AddWithValue("@Codigo", nuevo.Codigo);
                 comando.Parameters.AddWithValue("@Nombre", nuevo.Nombre);
                 comando.Parameters.AddWithValue("@Precio", nuevo.Precio);
                 comando.Parameters.AddWithValue("@Descripcion", nuevo.Descripcion);
+                comando.Parameters.AddWithValue("@IdMarca", nuevo.Marca.IdMarca);
+                comando.Parameters.AddWithValue("@IdCategoria", nuevo.Categoria.codigoCategoria);
+
+
                 comando.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -225,6 +229,94 @@ namespace WindowsFormsApp_Tarea1.Clases
             }
 
         }
+
+        internal void agregarMarca(Marca nuevaMarca)
+        {
+            try
+            {
+                conectar();
+                setSringCommand("INSERT INTO MARCAS (Descripcion) VALUES (@Descripcion)");
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@Descripcion", nuevaMarca.DescripcionMarca);
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                desconectar();
+            }
+
+
+        }
+
+        internal void agregarCategoria(Categoria nuevaCategoria)
+        {
+            try
+            {
+                conectar();
+                setSringCommand("INSERT INTO CATEGORIAS (Descripcion) VALUES (@Descripcion)");
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@Descripcion", nuevaCategoria.nombreCategoria);
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                desconectar();
+            }
+
+
+        }
+
+        public int obtenerIdArticuloPorCodigo(string codigo)
+        {
+            try
+            {
+                conectar();
+                setSringCommand("SELECT Id FROM ARTICULOS WHERE Codigo = @Codigo");
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@Codigo", codigo);
+                return (int)comando.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                desconectar();
+            }
+        }
+
+        public void agregarImagen(Imagen nueva)
+        {
+            try
+            {
+                conectar();
+                setSringCommand("INSERT INTO IMAGENES (IdArticulo, ImagenUrl) VALUES (@IdArticulo, @ImagenUrl)");
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@IdArticulo", nueva.IdArticulo);
+                comando.Parameters.AddWithValue("@ImagenUrl", nueva.ImagenUrl);
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                desconectar();
+            }
+        }
+
+
+
 
     }
 }

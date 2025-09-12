@@ -98,20 +98,21 @@
             // articuloToolStripMenuItem
             // 
             this.articuloToolStripMenuItem.Name = "articuloToolStripMenuItem";
-            this.articuloToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.articuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.articuloToolStripMenuItem.Text = "Articulo";
             this.articuloToolStripMenuItem.Click += new System.EventHandler(this.articuloToolStripMenuItem_Click);
             // 
             // marcaToolStripMenuItem
             // 
             this.marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
-            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.marcaToolStripMenuItem.Text = "Marca";
+            this.marcaToolStripMenuItem.Click += new System.EventHandler(this.marcaToolStripMenuItem_Click);
             // 
             // categoriaToolStripMenuItem
             // 
             this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
-            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.categoriaToolStripMenuItem.Text = "Categoria";
             // 
             // buscarToolStripMenuItem
