@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp_Tarea1
+namespace Dominio
 {
-    internal class Categoria
+    public class Categoria
     {
         private int CodigoCategoria;
         private string NombreCategoria;
 
         public int codigoCategoria { get => CodigoCategoria; set => CodigoCategoria= value; }
         public string nombreCategoria { get => NombreCategoria; set =>  NombreCategoria= value; }
-
+        public override string ToString() { return NombreCategoria; }
     }
 }

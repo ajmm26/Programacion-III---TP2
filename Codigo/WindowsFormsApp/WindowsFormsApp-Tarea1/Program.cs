@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp_Tarea1.Clases;
+//using WindowsFormsApp_Tarea1.Clases;
 using WindowsFormsApp_Tarea1.Ventanas;
+using Dominio;
+using Datos;
 
 namespace WindowsFormsApp_Tarea1
 {

@@ -1,0 +1,6 @@
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Dominio\bin\Debug\Dominio.dll
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Dominio\bin\Debug\Dominio.pdb
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Dominio\obj\Debug\Dominio.dll
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Dominio\obj\Debug\Dominio.pdb

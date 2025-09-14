@@ -1,54 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\",
+  "WorkspaceRootPath": "C:\\Users\\raull\\Desktop\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\ventanas\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\ventanas\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|c:\\users\\ale\\desktop\\tpp3-2\\programacion-iii---tp2\\codigo\\windowsformsapp\\windowsformsapp-tarea1\\ventanas\\alta articulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\ventanas\\alta articulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\ventanas\\alta articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\ventanas\\alta articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\clases\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\clases\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\clases\\catalogoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\clases\\catalogoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|c:\\users\\ale\\desktop\\tpp3-2\\programacion-iii---tp2\\codigo\\windowsformsapp\\windowsformsapp-tarea1\\ventanas\\frmmodificararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\ventanas\\frmmodificararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\ventanas\\frmmodificararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\ventanas\\frmmodificararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\ventanas\\frmmodificararticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\ventanas\\frmmodificararticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\ventanas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\ventanas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\ventanas\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\ventanas\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\ventanas\\alta articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\raull\\Desktop\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\ventanas\\alta articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\ventanas\\alta articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1629898-114A-448E-B49D-C67E07D61806}|Datos\\Datos.csproj|c:\\users\\raull\\desktop\\programacion-iii---tp2\\codigo\\windowsformsapp\\datos\\imagenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1629898-114A-448E-B49D-C67E07D61806}|Datos\\Datos.csproj|solutionrelative:datos\\imagenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|C:\\Users\\raull\\Desktop\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\windowsformsapp-tarea1\\ventanas\\alta articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8ACEA44-78D0-4C73-92BE-244128F46B33}|WindowsFormsApp-Tarea1\\WindowsFormsApp-Tarea1.csproj|solutionrelative:windowsformsapp-tarea1\\ventanas\\alta articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,22 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Articulo.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Clases\\Articulo.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Clases\\Articulo.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Clases\\Articulo.cs",
-              "RelativeToolTip": "WindowsFormsApp-Tarea1\\Clases\\Articulo.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T20:12:26.563Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -81,74 +31,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Alta Articulo.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.Designer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.Designer.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.Designer.cs",
-              "RelativeToolTip": "WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.Designer.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAowM0AAAAAAAAAAAAAAA==",
+              "Title": "ImagenService.cs",
+              "DocumentMoniker": "C:\\Users\\raull\\Desktop\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\Datos\\ImagenService.cs",
+              "RelativeDocumentMoniker": "Datos\\ImagenService.cs",
+              "ToolTip": "C:\\Users\\raull\\Desktop\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\Datos\\ImagenService.cs",
+              "RelativeToolTip": "Datos\\ImagenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T05:10:47.212Z",
+              "WhenOpened": "2025-09-14T13:31:42.39Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmModificarArticulo.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.cs",
-              "RelativeToolTip": "WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAcwCAAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:25:38.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CatalogoService.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Clases\\CatalogoService.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Clases\\CatalogoService.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Clases\\CatalogoService.cs",
-              "RelativeToolTip": "WindowsFormsApp-Tarea1\\Clases\\CatalogoService.cs",
-              "ViewState": "AgIAAMsAAAAAAAAAAAAuwNsAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:33:52.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Form2.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Ventanas\\Form2.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Form2.cs",
-              "RelativeToolTip": "WindowsFormsApp-Tarea1\\Ventanas\\Form2.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAmwKIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T01:02:47.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmModificarArticulo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:25:05.443Z",
-              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Alta Articulo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs",
+              "DocumentMoniker": "C:\\Users\\raull\\Desktop\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\raull\\Desktop\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs [Dise\u00F1o]",
               "RelativeToolTip": "WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T21:44:46.207Z",
@@ -156,65 +55,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Form1.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Ventanas\\Form1.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Form1.cs",
-              "RelativeToolTip": "WindowsFormsApp-Tarea1\\Ventanas\\Form1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T04:41:31.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmModificarArticulo.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.Designer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.Designer.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.Designer.cs",
-              "RelativeToolTip": "WindowsFormsApp-Tarea1\\Ventanas\\frmModificarArticulo.Designer.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAAAOEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T21:42:51.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Alta Articulo.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs",
+              "DocumentMoniker": "C:\\Users\\raull\\Desktop\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs",
+              "ToolTip": "C:\\Users\\raull\\Desktop\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs",
               "RelativeToolTip": "WindowsFormsApp-Tarea1\\Ventanas\\Alta Articulo.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAQwD4AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwDYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T21:37:16.665Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Program.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Program.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Program.cs",
-              "RelativeToolTip": "WindowsFormsApp-Tarea1\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAQwA0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T00:19:54.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Form2.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp-Tarea1\\Ventanas\\Form2.cs",
-              "ToolTip": "C:\\Users\\Ale\\Desktop\\TPP3-2\\Programacion-III---TP2\\Codigo\\WindowsFormsApp\\WindowsFormsApp-Tarea1\\Ventanas\\Form2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp-Tarea1\\Ventanas\\Form2.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T01:02:45.128Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

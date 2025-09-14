@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp_Tarea1.Clases
+namespace Dominio
 {
-    internal class Articulo
+    public class Articulo
     {
 
         private string codigo;
@@ -16,8 +16,11 @@ namespace WindowsFormsApp_Tarea1.Clases
         private int id;
         public Marca Marca { get; set; }
         public Categoria Categoria { get; set; }
+        public List<Imagen> Imagenes { get; set; } = new List<Imagen>();
 
-        
+
+
+
         public int Id { get => id; set => id = value; }
         
         public string Codigo { get => codigo; set => codigo = value; } 

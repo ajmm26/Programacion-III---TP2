@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp_Tarea1.Clases;
+using Dominio;
+using Datos;
 
 namespace WindowsFormsApp_Tarea1
 {
@@ -25,7 +26,8 @@ namespace WindowsFormsApp_Tarea1
 
         private void AltaArticulo_Load(object sender, EventArgs e)
         {
-            CatalogoService servicio = new CatalogoService();
+            CategoriaService servicio = new CategoriaService();
+            MarcaService service = new MarcaService();
 
             List<Categoria> categorias = servicio.lecturaCategorias();
 
@@ -33,7 +35,7 @@ namespace WindowsFormsApp_Tarea1
             comboBoxCategoria.DisplayMember = "nombreCategoria";     
             comboBoxCategoria.ValueMember = "codigoCategoria"; 
 
-            List<Marca> marca = servicio.lecturaMarcas();
+            List<Marca> marca = service.lecturaMarcas();
 
             comboBoxMarca.DataSource = marca;
             comboBoxMarca.DisplayMember = "DescripcionMarca";
@@ -50,39 +52,66 @@ namespace WindowsFormsApp_Tarea1
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Articulo nuevo = new Articulo();
+            
             
             try
             {
-                nuevo.Codigo = txtcodigo.Text;
-                nuevo.Nombre = txtNombre.Text;
-                nuevo.Precio = float.Parse(txtPrecio.Text);
-                nuevo.Descripcion = txtDescrpcion.Text;
-                nuevo.Marca = (Marca)comboBoxMarca.SelectedItem;
-                nuevo.Categoria = (Categoria)comboBoxCategoria.SelectedItem;
-
-                if (nuevo.Marca == null || nuevo.Categoria == null)
+                
+                if (string.IsNullOrWhiteSpace(txtcodigo.Text) ||
+                    string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                    string.IsNullOrWhiteSpace(txtPrecio.Text) ||
+                    string.IsNullOrWhiteSpace(txtDescrpcion.Text))
                 {
-                    MessageBox.Show("Por favor, seleccioná una marca y una categoría.");
+                    MessageBox.Show("Completá todos los campos obligatorios.");
                     return;
                 }
+
+                
+                if (!float.TryParse(txtPrecio.Text, out float precio))
+                {
+                    MessageBox.Show("Ingresá un precio válido.");
+                    return;
+                }
+
+                
+                if (comboBoxMarca.SelectedItem == null || comboBoxCategoria.SelectedItem == null)
+                {
+                    MessageBox.Show("Seleccioná una marca y una categoría.");
+                    return;
+                }
+
+                
+                Articulo nuevo = new Articulo
+                {
+                    Codigo = txtcodigo.Text.Trim(),
+                    Nombre = txtNombre.Text.Trim(),
+                    Precio = precio,
+                    Descripcion = txtDescrpcion.Text.Trim(),
+                    Marca = (Marca)comboBoxMarca.SelectedItem,
+                    Categoria = (Categoria)comboBoxCategoria.SelectedItem
+                };
+
+
 
 
 
                 CatalogoService servicio = new CatalogoService();
+                ImagenService service = new ImagenService();
                 servicio.agregar(nuevo);
+
+
                 string urlImagen = txtImagen.Text.Trim();
+                string urlImagenVacia = "https://www.creaodontologia.com/wp-content/uploads/2025/03/placeholder-2.png";
 
-                if (!string.IsNullOrEmpty(urlImagen))
-                {
-                    int idArticulo = servicio.obtenerIdArticuloPorCodigo(nuevo.Codigo);
+                int idArticulo = servicio.obtenerIdArticuloPorCodigo(nuevo.Codigo);
 
-                    Imagen nuevaImagen = new Imagen();
-                    nuevaImagen.IdArticulo = idArticulo;
-                    nuevaImagen.ImagenUrl = urlImagen;
+                Imagen nuevaImagen = new Imagen();
+                nuevaImagen.IdArticulo = idArticulo;
+                nuevaImagen.ImagenUrl = string.IsNullOrWhiteSpace(urlImagen) ? urlImagenVacia : urlImagen;
 
-                    servicio.agregarImagen(nuevaImagen);
-                }
+                service.agregarImagen(nuevaImagen);
+
+
 
 
                 MessageBox.Show("Articulo agregado correctamente.");
@@ -92,6 +121,35 @@ namespace WindowsFormsApp_Tarea1
             {
                 MessageBox.Show("Error al cargar el articulo: " + ex.Message);
             }
+        }
+
+        
+
+        private void btnVistaPrevia_Click(object sender, EventArgs e)
+        {
+            string url = txtImagen.Text.Trim();
+            string urlImagenVacia = "https://www.creaodontologia.com/wp-content/uploads/2025/03/placeholder-2.png";
+
+            if (!string.IsNullOrEmpty(url))
+            {
+                try
+                {
+                    pBoxVistaPrevia.Load(url);
+                }
+                catch
+                {
+                    pBoxVistaPrevia.Load(urlImagenVacia);
+                    MessageBox.Show("No se pudo cargar la imagen desde la URL. Se muestra una imagen vacía.");
+                }
+            }
+            else
+            {
+                pBoxVistaPrevia.Load(urlImagenVacia);
+                MessageBox.Show("Ingresá una URL válida. Se muestra una imagen vacía.");
+            }
+
+
+
         }
     }
 }

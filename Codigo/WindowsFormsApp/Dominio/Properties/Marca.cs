@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp_Tarea1
+namespace Dominio
 {
-    internal class Marca
+    public class Marca
     {
         public int IdMarca { get; set; }    
         public string DescripcionMarca { get; set; }
+
+        public override string ToString() { return DescripcionMarca; }
     }
 }

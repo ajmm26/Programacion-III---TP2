@@ -8,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp_Tarea1.Clases;
+//using WindowsFormsApp_Tarea1.Clases;
+using Dominio;
+using Datos;
 
 namespace WindowsFormsApp_Tarea1.Ventanas
 {
@@ -21,9 +23,11 @@ namespace WindowsFormsApp_Tarea1.Ventanas
 
         private void frmModificarArticulo_Load(object sender, EventArgs e)
         {
-            CatalogoService servicio = new CatalogoService();  
+            CatalogoService service1 = new CatalogoService();
+            CategoriaService servicio = new CategoriaService();  
+            MarcaService service = new MarcaService();  
             //articulos
-            List<Articulo> articulos = servicio.lecturaArticulosGeneral();
+            List<Articulo> articulos = service1.lecturaArticulosGeneral();
             cbArticuloElegido.DataSource = articulos;
             cbArticuloElegido.DisplayMember = "Nombre";  // Cambia "Nombre" por el nombre real de la propiedad (ej. "Descripcion")
             cbArticuloElegido.ValueMember = "Id";
@@ -33,7 +37,7 @@ namespace WindowsFormsApp_Tarea1.Ventanas
             cboCategoriaModificar.DisplayMember = "nombreCategoria";
             cboCategoriaModificar.ValueMember = "codigoCategoria";
             ///Marcas
-            List<Marca> marcas = servicio.lecturaMarcas();
+            List<Marca> marcas = service.lecturaMarcas();
             cboMarcaModificar.DataSource = marcas;
             cboMarcaModificar.DisplayMember = "DescripcionMarca";
            cboMarcaModificar.ValueMember = "IdMarca";
@@ -59,12 +63,14 @@ namespace WindowsFormsApp_Tarea1.Ventanas
             {
              
                 CatalogoService servicio = new CatalogoService();
+                CategoriaService service = new CategoriaService();
+                MarcaService service1 = new MarcaService();
              bool resnombre=  servicio.ModificarNombre(id,nombre);
                bool rescodigo= servicio.ModificarCodigo(id,codigo);
                bool resDescripcion= servicio.ModificarDescripcion(id,descripcion);
-                bool resMarca= servicio.ModificarMarca( id, id_Marca);
+                bool resMarca= service1.ModificarMarca( id, id_Marca);
                bool resPrecio = servicio.ModificarPrecio( id, precio);
-               bool resCategoria= servicio.ModificarCategoria(id, Id_Categotia);
+               bool resCategoria= service.ModificarCategoria(id, Id_Categotia);
                if(resnombre || rescodigo || resDescripcion  || resPrecio)
                 {
                     MessageBox.Show("Articulo modificado con exito");

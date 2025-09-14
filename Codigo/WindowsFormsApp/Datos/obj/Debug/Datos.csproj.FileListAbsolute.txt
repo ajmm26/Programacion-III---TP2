@@ -1,0 +1,9 @@
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Datos\bin\Debug\Datos.dll
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Datos\bin\Debug\Datos.pdb
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Datos\bin\Debug\Dominio.dll
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Datos\bin\Debug\Dominio.pdb
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Datos\obj\Debug\Datos.dll
+C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\Datos\obj\Debug\Datos.pdb

@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp_Tarea1.Clases;
+using Datos;
+using Dominio;
 
 namespace WindowsFormsApp_Tarea1
 {
@@ -36,7 +37,8 @@ namespace WindowsFormsApp_Tarea1
                 return;
             }
 
-            CatalogoService servicio = new CatalogoService();
+            CategoriaService servicio = new CategoriaService();
+            MarcaService service = new MarcaService();
 
             try
             {
@@ -44,7 +46,7 @@ namespace WindowsFormsApp_Tarea1
                 {
                     Marca nuevaMarca = new Marca();
                     nuevaMarca.DescripcionMarca = nombre;
-                    servicio.agregarMarca(nuevaMarca);
+                    service.agregarMarca(nuevaMarca);
                 }
                 else if (tipo == "Categoría")
                 {

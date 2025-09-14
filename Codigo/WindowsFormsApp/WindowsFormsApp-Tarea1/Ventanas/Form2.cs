@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp_Tarea1.Clases;
+using Datos;
 using WindowsFormsApp_Tarea1.Ventanas;
+using Dominio;
 
 namespace WindowsFormsApp_Tarea1
 {
@@ -23,6 +24,13 @@ namespace WindowsFormsApp_Tarea1
       
         private void CatalogoWindows_Load(object sender, EventArgs e)
         {
+            CargarCatalogo();
+
+        }
+
+        public void CargarCatalogo()
+        {
+            PanelCatalogo.Controls.Clear();
             FlowLayoutPanel panel_Catalogo = PanelCatalogo;
             panel_Catalogo.AutoScroll = true;
             List<Articulo> lista = listaArticulos();
@@ -31,16 +39,16 @@ namespace WindowsFormsApp_Tarea1
             foreach (Articulo art in lista)
             {
                 ////paneles contenedores
-              
+
                 ///General
                 Panel panel = panelContenedor();
                 ///contendor de imagenes
-               Panel panelImage = getpanelImage(panel_Catalogo);
+                Panel panelImage = getpanelImage(panel_Catalogo);
                 ///contendor de textos
                 // Panel de texto
                 Panel panelText = getpanelText();
                 ////contenedor de imagenes
-               PictureBox pictureBox = getPictureBox( listaImagenes,index,panelImage);
+                PictureBox pictureBox = getPictureBox(listaImagenes, index, panelImage);
                 ////label nombre
                 Label labelNombre = getlabel();
                 labelNombre.Text = art.Nombre;
@@ -52,18 +60,18 @@ namespace WindowsFormsApp_Tarea1
                 labelPrecioValor.Dock = DockStyle.Fill;
                 labelPrecioValor.TextAlign = ContentAlignment.BottomCenter;
                 ////
-                Label labelDescripcion = getlabel();   
+                Label labelDescripcion = getlabel();
                 labelDescripcion.Text = art.Descripcion;
                 labelDescripcion.Dock = DockStyle.Top;
                 labelDescripcion.TextAlign = ContentAlignment.MiddleCenter;
                 labelDescripcion.Height = 40;
-                labelDescripcion.Padding = new Padding(0,5,0,0);
+                labelDescripcion.Padding = new Padding(0, 5, 0, 0);
                 // margen interno
-                labelNombre.Padding = new Padding(0, 6,0,0);
-                 
+                labelNombre.Padding = new Padding(0, 6, 0, 0);
+
 
                 panelText.Controls.Add(labelDescripcion);
-                panelImage.Controls.Add(pictureBox);   
+                panelImage.Controls.Add(pictureBox);
                 panelText.Controls.Add(labelNombre);
                 panelText.Controls.Add(labelPrecioValor);
                 // Agrego al panel principal
@@ -144,7 +152,7 @@ namespace WindowsFormsApp_Tarea1
 
         private List<Imagen> ObtenerUrlImagenes()
         {
-            CatalogoService servicio = new CatalogoService();
+            ImagenService servicio = new ImagenService();
            return servicio.lecturaImagenes();
         }
 
@@ -152,6 +160,7 @@ namespace WindowsFormsApp_Tarea1
         {
             AltaArticulo alta = new AltaArticulo(); 
             alta.ShowDialog();
+            CargarCatalogo();
            /* CatalogoService servicio = new CatalogoService();
             dataGridView1.DataSource = servicio.lecturaArticulosGeneral();*/
         }
@@ -163,6 +172,23 @@ namespace WindowsFormsApp_Tarea1
         }
 
         private void marcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 altaMarca = new Form4();
+            altaMarca.StartPosition = FormStartPosition.CenterScreen;
+            altaMarca.ShowDialog();
+        }
+
+        private void articuloToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            EliminarArticuloFisico ventanaEliminar = new EliminarArticuloFisico();
+            ventanaEliminar.StartPosition = FormStartPosition.CenterScreen;
+            ventanaEliminar.ShowDialog();
+
+            CargarCatalogo(); 
+
+        }
+
+        private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form4 altaMarca = new Form4();
             altaMarca.StartPosition = FormStartPosition.CenterScreen;
