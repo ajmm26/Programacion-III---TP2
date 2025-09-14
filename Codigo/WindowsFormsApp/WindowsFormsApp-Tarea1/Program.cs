@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp_Tarea1.Clases;
+using WindowsFormsApp_Tarea1.Ventanas;
 
 namespace WindowsFormsApp_Tarea1
 {

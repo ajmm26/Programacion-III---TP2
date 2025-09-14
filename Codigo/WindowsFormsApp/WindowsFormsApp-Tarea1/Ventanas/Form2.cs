@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp_Tarea1.Clases;
+using WindowsFormsApp_Tarea1.Ventanas;
 
 namespace WindowsFormsApp_Tarea1
 {
@@ -34,7 +35,7 @@ namespace WindowsFormsApp_Tarea1
                 ///General
                 Panel panel = panelContenedor();
                 ///contendor de imagenes
-               Panel panelImage = getpanelImage();
+               Panel panelImage = getpanelImage(panel_Catalogo);
                 ///contendor de textos
                 // Panel de texto
                 Panel panelText = getpanelText();
@@ -59,20 +60,23 @@ namespace WindowsFormsApp_Tarea1
                 labelDescripcion.Padding = new Padding(0,5,0,0);
                 // margen interno
                 labelNombre.Padding = new Padding(0, 6,0,0);
+                 
+
                 panelText.Controls.Add(labelDescripcion);
                 panelImage.Controls.Add(pictureBox);   
                 panelText.Controls.Add(labelNombre);
                 panelText.Controls.Add(labelPrecioValor);
                 // Agrego al panel principal
+                panel_Catalogo.Controls.Add(panel);
                 panel.Controls.Add(panelImage);
                 panel.Controls.Add(panelText);
-                panel_Catalogo.Controls.Add(panel);
 
                 index++;
             }
 
 
         }
+
 
 
         private Label getlabel()
@@ -115,13 +119,13 @@ namespace WindowsFormsApp_Tarea1
             panel.Height = 250;
             panel.BorderStyle = BorderStyle.FixedSingle;
             panel.BackColor = Color.LightGray;
-            panel.Margin = new Padding(20);
+            panel.Margin = new Padding(30);
+          
             panel.BorderStyle = BorderStyle.Fixed3D;
             return panel;
         }
 
-
-        private Panel getpanelImage()
+        private Panel getpanelImage(FlowLayoutPanel panel_Catalogo)
         {
             Panel panelImage = new Panel();
             panelImage.Width = 140;
@@ -150,6 +154,12 @@ namespace WindowsFormsApp_Tarea1
             alta.ShowDialog();
            /* CatalogoService servicio = new CatalogoService();
             dataGridView1.DataSource = servicio.lecturaArticulosGeneral();*/
+        }
+
+        private void articuloToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Form form = new frmModificarArticulo();
+            form.ShowDialog();
         }
 
         private void marcaToolStripMenuItem_Click(object sender, EventArgs e)

@@ -13,11 +13,13 @@ namespace WindowsFormsApp_Tarea1.Clases
         private string nombre;
         private float precio;
         private string descripcion;
+        private int id;
         public Marca Marca { get; set; }
         public Categoria Categoria { get; set; }
 
-        //public Imagen Imagen { get; set; }
-
+        
+        public int Id { get => id; set => id = value; }
+        
         public string Codigo { get => codigo; set => codigo = value; } 
 
         public string Nombre { get => nombre; set => nombre = value; }  

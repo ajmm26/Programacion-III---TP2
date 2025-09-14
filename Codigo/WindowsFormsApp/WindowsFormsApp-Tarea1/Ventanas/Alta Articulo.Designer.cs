@@ -43,7 +43,11 @@
             this.labelImagen = new System.Windows.Forms.Label();
             this.labelDescripcion = new System.Windows.Forms.Label();
             this.txtDescrpcion = new System.Windows.Forms.TextBox();
+
+            this.button_agregarImagen_creacion = new System.Windows.Forms.Button();
+
             this.txtImagen = new System.Windows.Forms.TextBox();
+
             this.SuspendLayout();
             // 
             // Precio
@@ -174,19 +178,34 @@
             this.txtDescrpcion.Size = new System.Drawing.Size(132, 20);
             this.txtDescrpcion.TabIndex = 20;
             // 
+
+            // button_agregarImagen_creacion
+            // 
+            this.button_agregarImagen_creacion.Location = new System.Drawing.Point(164, 229);
+            this.button_agregarImagen_creacion.Name = "button_agregarImagen_creacion";
+            this.button_agregarImagen_creacion.Size = new System.Drawing.Size(75, 23);
+            this.button_agregarImagen_creacion.TabIndex = 21;
+            this.button_agregarImagen_creacion.Text = "Agegar";
+            this.button_agregarImagen_creacion.UseVisualStyleBackColor = true;
+
             // txtImagen
             // 
             this.txtImagen.Location = new System.Drawing.Point(150, 227);
             this.txtImagen.Name = "txtImagen";
             this.txtImagen.Size = new System.Drawing.Size(132, 20);
             this.txtImagen.TabIndex = 21;
+
             // 
             // AltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 450);
+
+            this.Controls.Add(this.button_agregarImagen_creacion);
+
             this.Controls.Add(this.txtImagen);
+
             this.Controls.Add(this.txtDescrpcion);
             this.Controls.Add(this.labelDescripcion);
             this.Controls.Add(this.labelImagen);
@@ -226,6 +245,8 @@
         private System.Windows.Forms.Label labelImagen;
         private System.Windows.Forms.Label labelDescripcion;
         private System.Windows.Forms.TextBox txtDescrpcion;
+        private System.Windows.Forms.Button button_agregarImagen_creacion;
+
         private System.Windows.Forms.TextBox txtImagen;
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_Tarea1.Ventanas
 {
-    public partial class Form5 : Form
+    public partial class frmArticuloIndiviual : Form
     {
-        public Form5()
+        public frmArticuloIndiviual()
         {
             InitializeComponent();
-        }
-
-        private void Form5_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

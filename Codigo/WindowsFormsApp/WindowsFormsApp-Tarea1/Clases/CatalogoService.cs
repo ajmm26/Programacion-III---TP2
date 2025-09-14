@@ -34,7 +34,11 @@ namespace WindowsFormsApp_Tarea1.Clases
 
         private void desconectar()
         {
-            conexion.Close();
+            if (conexion.State == System.Data.ConnectionState.Open)
+            {
+                conexion.Close();
+            }
+           
         }
 
         private void setSringCommand(string stsqlcommand)
@@ -54,12 +58,13 @@ namespace WindowsFormsApp_Tarea1.Clases
             try
             {
                 conectar();
-                setSringCommand("select Codigo, Nombre, Precio, Descripcion from ARTICULOS");
+                setSringCommand("select Id,Codigo, Nombre, Precio, Descripcion from ARTICULOS");
                 ExcecuteLector();
 
                 while (lector.Read())
                 {
                     Articulo art = new Articulo();
+                    art.Id = (int)lector["Id"];
                     art.Codigo = (string)lector["Codigo"];
                     art.Nombre = (string)lector["Nombre"];
                     art.Precio = (float)Convert.ToDecimal(lector["Precio"]);
@@ -228,6 +233,176 @@ namespace WindowsFormsApp_Tarea1.Clases
                 desconectar();
             }
 
+        }
+
+        public bool ModificarCodigo(int id,string codigo)
+        {
+            if (codigo != "" )
+            {
+                try
+                {
+                    conectar();
+                    comando.Parameters.Clear();
+                    if (verificarId(id))
+                    {
+                        comando.Parameters.AddWithValue("@codigo", codigo);
+                        setSringCommand("Update Articulos set Codigo=@codigo where id=@id");
+                        comando.ExecuteNonQuery();
+                    }return true;
+                }
+                catch (Exception ex) { throw ex; }
+                finally { desconectar(); }
+            }return false;
+        }
+        public bool ModificarNombre(int id,string nombre)
+        {
+            if (nombre != "" )
+            {
+                try
+                {
+          
+                        conectar();
+                        comando.Parameters.Clear();
+                    if (verificarId(id))
+                    {
+                        comando.Parameters.AddWithValue("@nombre", nombre);
+                        setSringCommand("Update Articulos set Nombre=@nombre where id=@id");
+
+                        comando.ExecuteNonQuery();
+                    }
+                    return true;
+                }
+                catch (Exception ex) { 
+                    throw ex; 
+                }
+                finally { 
+                    desconectar(); 
+                }
+            }return false;
+        }
+
+        public bool ModificarDescripcion(int id,string Descripcion)
+        {
+            if (Descripcion != "" )
+            {
+                try
+                {
+                    conectar();
+                    comando.Parameters.Clear();
+
+                    if (verificarId(id)) { 
+                    comando.Parameters.AddWithValue("@Descripcion", Descripcion);
+                    setSringCommand("Update Articulos set Descripcion=@Descripcion where id=@id");
+
+                    comando.ExecuteNonQuery();
+                    }
+                    return true;
+                }
+                catch (Exception ex) { throw ex; }
+                finally { desconectar(); }
+            }
+            return false;
+        }
+
+        private bool verificarId(int id)
+        {
+            if (id > 0)
+            {
+                comando.Parameters.AddWithValue("@Id", id);
+                return true;
+            }
+            return false;
+        }
+
+
+        public bool ModificarMarca(int id, int id_Marca)
+        {
+            if (id_Marca > 0)
+            {
+                conectar();
+                comando.Parameters.Clear();
+                try
+                {
+                    if (verificarId(id))
+                    {
+                        comando.Parameters.AddWithValue("@IdMarca", id_Marca);
+                        setSringCommand("Update Articulos set IdMarca=@IdMarca where id=@id");
+
+
+                        comando.ExecuteNonQuery();
+                    }
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    desconectar();
+                }
+            }return false;
+        } 
+
+
+        public bool ModificarPrecio(int id, decimal precio)
+        {
+
+            if (precio > 0 )
+            {
+                try
+                {
+                    conectar();
+                    comando.Parameters.Clear();
+
+                    if (verificarId(id)) {
+                        comando.Parameters.AddWithValue("@precio", precio);
+                        setSringCommand("Update Articulos set precio=@precio where id=@id");
+
+                        comando.ExecuteNonQuery();
+                    }
+                    return true;
+
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                   
+                }
+                finally
+                {
+
+                    desconectar();
+                }
+            } return false;
+        }
+
+
+        public bool ModificarCategoria(int id, int id_Categoria)
+        {
+            if (id_Categoria > 0)
+            {
+                try
+                {
+                    conectar();
+                    comando.Parameters.Clear();
+                    if (verificarId(id))
+                    {
+                        comando.Parameters.AddWithValue("@IdCategoria", id_Categoria);
+                        setSringCommand("Update Articulos set IdCategoria=@IdCategoria where id=@id");
+                        comando.ExecuteNonQuery();
+                    }
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    desconectar();
+                }
+            } return false;
         }
 
         internal void agregarMarca(Marca nuevaMarca)
