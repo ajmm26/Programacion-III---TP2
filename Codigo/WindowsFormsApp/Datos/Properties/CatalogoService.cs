@@ -20,7 +20,7 @@ namespace Datos
             try
             {
                 conectar();
-                setStringCommand("select Id,Codigo, Nombre, Precio, Descripcion from ARTICULOS");
+                setStringCommand("select Id,Codigo, Nombre, Precio, Descripcion,IdMarca,IdCategoria from ARTICULOS");
                 ExcecuteLector();
 
                 while (lector.Read())
@@ -31,6 +31,8 @@ namespace Datos
                     art.Nombre = (string)lector["Nombre"];
                     art.Precio = (float)Convert.ToDecimal(lector["Precio"]);
                     art.Descripcion = (string)lector["Descripcion"];
+                    art.Id_Marca= (int)lector["idMarca"];
+                    art.Id_Categoria = (int)lector["idCategoria"];
 
                     ImagenService imagenService = new ImagenService();
                     art.Imagenes = imagenService.obtenerImagenesPorIdArticulo(art.Id);
@@ -243,9 +245,48 @@ namespace Datos
             }
         }
 
+        public List<Articulo> BuscarArticulo(string nombre)
+        {
+            List<Articulo> lista = new List<Articulo>();
 
+            try
+            {
+                conectar();
 
+                setStringCommand("SELECT Id, Codigo, Nombre, Precio, Descripcion, IdMarca, IdCategoria " +
+                                 "FROM ARTICULOS " +
+                                 "WHERE LOWER(Nombre) LIKE '%' + LOWER(@nombre) + '%'");
 
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@nombre", nombre);
+
+                lector = comando.ExecuteReader();
+
+                while (lector.Read())
+                {
+                    Articulo art = new Articulo();
+                    art.Id = (int)lector["Id"];
+                    art.Codigo = (string)lector["Codigo"];
+                    art.Nombre = (string)lector["Nombre"];
+                    art.Precio = Convert.ToSingle(lector["Precio"]);  // mejor que cast directo
+                    art.Descripcion = (string)lector["Descripcion"];
+                    art.Id_Marca = (int)lector["IdMarca"];
+                    art.Id_Categoria = (int)lector["IdCategoria"];
+
+                    lista.Add(art);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                desconectar();
+            }
+
+            return lista;
+        }
     }
 }
     

@@ -31,8 +31,8 @@ namespace WindowsFormsApp_Tarea1
         public void CargarCatalogo()
         {
             PanelCatalogo.Controls.Clear();
-            FlowLayoutPanel panel_Catalogo = PanelCatalogo;
-            panel_Catalogo.AutoScroll = true;
+            FlowLayoutPanel contenedor_Catalogo = PanelCatalogo;
+            contenedor_Catalogo.AutoScroll = true;
             List<Articulo> lista = listaArticulos();
             List<Imagen> listaImagenes = ObtenerUrlImagenes();
             int index = 0;
@@ -43,10 +43,21 @@ namespace WindowsFormsApp_Tarea1
                 ///General
                 Panel panel = panelContenedor();
                 ///contendor de imagenes
-                Panel panelImage = getpanelImage(panel_Catalogo);
+                Panel panelImage = getpanelImage(contenedor_Catalogo);
                 ///contendor de textos
                 // Panel de texto
                 Panel panelText = getpanelText();
+                //// Panel button ver mas
+                Panel panelButton = new Panel();
+                panelButton.Dock = DockStyle.Bottom;
+                panelButton.Height = 30;
+                ////
+                ///button ver mas
+                Button buttonVerMas = new Button();
+                buttonVerMas.Text = "Ver más";
+                buttonVerMas.Dock = DockStyle.Bottom;
+               buttonVerMas.Tag=art; // Asociar el objeto Articulo al botón
+                buttonVerMas.Click += buttonVermas_click;
                 ////contenedor de imagenes
                 PictureBox pictureBox = getPictureBox(listaImagenes, index, panelImage);
                 ////label nombre
@@ -59,25 +70,21 @@ namespace WindowsFormsApp_Tarea1
                 labelPrecioValor.Text = "$ " + art.Precio.ToString("F2");
                 labelPrecioValor.Dock = DockStyle.Fill;
                 labelPrecioValor.TextAlign = ContentAlignment.BottomCenter;
-                ////
-                Label labelDescripcion = getlabel();
-                labelDescripcion.Text = art.Descripcion;
-                labelDescripcion.Dock = DockStyle.Top;
-                labelDescripcion.TextAlign = ContentAlignment.MiddleCenter;
-                labelDescripcion.Height = 40;
-                labelDescripcion.Padding = new Padding(0, 5, 0, 0);
+                
                 // margen interno
                 labelNombre.Padding = new Padding(0, 6, 0, 0);
 
 
-                panelText.Controls.Add(labelDescripcion);
+             //   panelText.Controls.Add(labelDescripcion);
                 panelImage.Controls.Add(pictureBox);
                 panelText.Controls.Add(labelNombre);
                 panelText.Controls.Add(labelPrecioValor);
+                panelButton.Controls.Add(buttonVerMas);
                 // Agrego al panel principal
-                panel_Catalogo.Controls.Add(panel);
+                contenedor_Catalogo.Controls.Add(panel);
                 panel.Controls.Add(panelImage);
                 panel.Controls.Add(panelText);
+                panel.Controls.Add(panelButton);
 
                 index++;
             }
@@ -85,7 +92,17 @@ namespace WindowsFormsApp_Tarea1
 
         }
 
+      private void buttonVermas_click(object sender, EventArgs e)
+        {
 
+            Button boton = sender as Button;
+            if (boton != null && boton.Tag is Articulo art)
+            {
+                ArrticuloIndividual arrticuloIndividual = new ArrticuloIndividual(art);
+                arrticuloIndividual.StartPosition = FormStartPosition.CenterScreen;
+                arrticuloIndividual.ShowDialog();
+            }
+        }
 
         private Label getlabel()
         {
@@ -115,7 +132,7 @@ namespace WindowsFormsApp_Tarea1
         {
             Panel panelText = new Panel();
             panelText.Dock = DockStyle.Bottom;   // 👈 clave
-            panelText.Height = 100;
+            panelText.Height = 70;
             panelText.BackColor = Color.LightGray;
            return panelText;
         }
@@ -133,7 +150,7 @@ namespace WindowsFormsApp_Tarea1
             return panel;
         }
 
-        private Panel getpanelImage(FlowLayoutPanel panel_Catalogo)
+        private Panel getpanelImage(FlowLayoutPanel contenedor_Catalogo)
         {
             Panel panelImage = new Panel();
             panelImage.Width = 140;
@@ -169,6 +186,8 @@ namespace WindowsFormsApp_Tarea1
         {
             Form form = new frmModificarArticulo();
             form.ShowDialog();
+            this.Refresh();
+                        CargarCatalogo();
         }
 
         private void marcaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -193,6 +212,20 @@ namespace WindowsFormsApp_Tarea1
             Form4 altaMarca = new Form4();
             altaMarca.StartPosition = FormStartPosition.CenterScreen;
             altaMarca.ShowDialog();
+        }
+
+        private void marcaToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Form6 altaMarca = new Form6();
+            altaMarca.StartPosition = FormStartPosition.CenterScreen;
+            altaMarca.ShowDialog();
+        }
+
+        private void articuloToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmBuscarProducto frmBuscarProducto = new frmBuscarProducto();
+            frmBuscarProducto.StartPosition = FormStartPosition.CenterScreen;
+            frmBuscarProducto.ShowDialog();
         }
     }
 }

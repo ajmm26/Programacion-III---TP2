@@ -43,7 +43,6 @@
             this.nombreModificado = new System.Windows.Forms.TextBox();
             this.cboMarcaModificar = new System.Windows.Forms.ComboBox();
             this.cboCategoriaModificar = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.cbArticuloElegido = new System.Windows.Forms.ComboBox();
             this.ButtonModficar = new System.Windows.Forms.Button();
@@ -51,6 +50,7 @@
             this.codigoModificado = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.buttonCancelarMD = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -165,6 +165,7 @@
             // 
             // cboMarcaModificar
             // 
+            this.cboMarcaModificar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMarcaModificar.FormattingEnabled = true;
             this.cboMarcaModificar.Location = new System.Drawing.Point(501, 201);
             this.cboMarcaModificar.Name = "cboMarcaModificar";
@@ -173,23 +174,16 @@
             // 
             // cboCategoriaModificar
             // 
+            this.cboCategoriaModificar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCategoriaModificar.FormattingEnabled = true;
             this.cboCategoriaModificar.Location = new System.Drawing.Point(501, 241);
             this.cboCategoriaModificar.Name = "cboCategoriaModificar";
             this.cboCategoriaModificar.Size = new System.Drawing.Size(121, 21);
             this.cboCategoriaModificar.TabIndex = 14;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(510, 294);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // cbArticuloElegido
             // 
+            this.cbArticuloElegido.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbArticuloElegido.FormattingEnabled = true;
             this.cbArticuloElegido.ImeMode = System.Windows.Forms.ImeMode.On;
             this.cbArticuloElegido.Location = new System.Drawing.Point(279, 117);
@@ -243,18 +237,25 @@
             this.buttonCancelarMD.UseVisualStyleBackColor = true;
             this.buttonCancelarMD.Click += new System.EventHandler(this.buttonCancelarMD_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(501, 296);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(144, 20);
+            this.textBox1.TabIndex = 22;
+            // 
             // frmModificarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonCancelarMD);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.codigoModificado);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.ButtonModficar);
             this.Controls.Add(this.cbArticuloElegido);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.cboCategoriaModificar);
             this.Controls.Add(this.cboMarcaModificar);
             this.Controls.Add(this.nombreModificado);
@@ -293,7 +294,6 @@
         private System.Windows.Forms.TextBox nombreModificado;
         private System.Windows.Forms.ComboBox cboMarcaModificar;
         private System.Windows.Forms.ComboBox cboCategoriaModificar;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ComboBox cbArticuloElegido;
         private System.Windows.Forms.Button ButtonModficar;
@@ -301,5 +301,6 @@
         private System.Windows.Forms.TextBox codigoModificado;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonCancelarMD;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

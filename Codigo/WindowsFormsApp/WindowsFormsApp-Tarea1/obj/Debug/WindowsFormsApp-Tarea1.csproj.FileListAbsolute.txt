@@ -47,7 +47,6 @@ C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\Window
 C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Form1.resources
 C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.CatalogoWindows.resources
 C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.AltaArticulo.resources
-C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Ventanas.frmArticuloIndiviual.resources
 C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Form4.resources
 C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Properties.Resources.resources
 C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Ventanas.frmModificarArticulo.resources
@@ -67,3 +66,11 @@ C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsForm
 C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\Datos.dll
 C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\Datos.pdb
 C:\Users\raull\Desktop\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.EliminarArticuloFisico.resources
+C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\Datos.dll
+C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\Dominio.dll
+C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\Datos.pdb
+C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\bin\Debug\Dominio.pdb
+C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.EliminarArticuloFisico.resources
+C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsF.74C6772A.Up2Date
+C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Ventanas.ArrticuloIndividual.resources
+C:\Users\Ale\Desktop\TPP3-2\Programacion-III---TP2\Codigo\WindowsFormsApp\WindowsFormsApp-Tarea1\obj\Debug\WindowsFormsApp_Tarea1.Ventanas.frmBuscarProducto.resources

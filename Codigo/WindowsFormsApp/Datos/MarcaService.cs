@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -89,5 +90,66 @@ namespace Datos
             }
             return false;
         }
+
+
+        public bool modificarMarcaTabla(int idMarca, string nombre)
+        {
+            if (nombre != " ")
+            {
+                try
+                {
+                    conectar();
+                    comando.Parameters.Clear();
+                    if (verificarId(idMarca))
+                    {
+                        comando.Parameters.AddWithValue("@descripcion", nombre);
+                        setStringCommand("Update Marcas set Descripcion=@descripcion where id=@Id");
+                        comando.ExecuteNonQuery();
+                    }
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    desconectar();
+                }
+            }
+            return false;
+        }
+
+
+        public Marca LecturaMarcaPorId(int id)
+        {
+            try
+            {
+                conectar();
+                comando.Parameters.Clear();
+                if (verificarId(id))
+                {
+                    setStringCommand("Select Id, Descripcion From MARCAS where id=@Id");
+                    ExcecuteLector();
+                    if (lector.Read())
+                    {
+                        Marca aux = new Marca();
+                        aux.IdMarca = (int)lector["Id"];
+                        aux.DescripcionMarca = (string)lector["Descripcion"];
+                        return aux;
+                    }
+
+                }
+                
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                desconectar();
+            }return null;
+        }  
     }
 }

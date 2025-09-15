@@ -90,5 +90,66 @@ namespace Datos
             return false;
         }
 
+        public bool modificarCategoriaTabla(int idCategoria, string nombre)
+        {
+            if (nombre != " ")
+            {
+                try
+                {
+                    conectar();
+                    comando.Parameters.Clear();
+                    if (verificarId(idCategoria))
+                    {
+                        comando.Parameters.AddWithValue("@descripcion", nombre);
+                        setStringCommand("Update Categorias set Descripcion=@descripcion where id=@Id");
+                         comando.ExecuteNonQuery();
+                    }
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    desconectar();
+                }
+            }
+            return false;
+        }
+
+        public Categoria LecturaCategoriaPorId(int id)
+        {
+            try
+            {
+                conectar();
+                comando.Parameters.Clear();
+                if (verificarId(id))
+                {
+                    setStringCommand("Select Id, Descripcion From Categorias where id=@Id");
+                    ExcecuteLector();
+                    if (lector.Read())
+                    {
+                        Categoria aux = new Categoria();
+                        aux.codigoCategoria = (int)lector["Id"];
+                        aux.nombreCategoria = (string)lector["Descripcion"];
+                        return aux;
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                desconectar();
+            }
+            return null;
+        }
+
+
     }
 }

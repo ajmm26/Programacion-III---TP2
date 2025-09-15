@@ -52,6 +52,12 @@
     <Compile Include="EliminarArticuloFisico.Designer.cs">
       <DependentUpon>EliminarArticuloFisico.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ventanas\ArrticuloIndividual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\ArrticuloIndividual.Designer.cs">
+      <DependentUpon>ArrticuloIndividual.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventanas\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="EliminarArticuloFisico.resx">
       <DependentUpon>EliminarArticuloFisico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\ArrticuloIndividual.resx">
+      <DependentUpon>ArrticuloIndividual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
