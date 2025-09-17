@@ -24,6 +24,8 @@ namespace WindowsFormsApp_Tarea1
             comboBoxTipo.Items.Add("Marca");
             comboBoxTipo.Items.Add("Categoría");
             comboBoxTipo.SelectedIndex = 0;
+            comboBoxTipo.DropDownStyle = ComboBoxStyle.DropDownList;
+            
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -31,11 +33,13 @@ namespace WindowsFormsApp_Tarea1
             string tipo = comboBoxTipo.SelectedItem.ToString();
             string nombre = txtNombre.Text.Trim();
 
-            if (string.IsNullOrEmpty(nombre))
+            if (string.IsNullOrWhiteSpace(nombre))
             {
-                MessageBox.Show("Por favor, ingresá un nombre.");
+                MessageBox.Show("El campo 'Nombre' no puede estar vacío.");
                 return;
             }
+
+
 
             CategoriaService servicio = new CategoriaService();
             MarcaService service = new MarcaService();

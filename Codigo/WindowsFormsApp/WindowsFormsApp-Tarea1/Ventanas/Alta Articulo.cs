@@ -74,6 +74,7 @@ namespace WindowsFormsApp_Tarea1
                 }
 
                 
+
                 if (comboBoxMarca.SelectedItem == null || comboBoxCategoria.SelectedItem == null)
                 {
                     MessageBox.Show("Seleccioná una marca y una categoría.");
